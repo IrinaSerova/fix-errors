@@ -4,21 +4,21 @@ var people = [
     { name: "John", age: 55 },
     { name: "Roger", age: 44 },
     { name: "Betty", age: 37 }
-    ]
+    ];
 
 var nameFilter = function(filteredName) {
-    var results = []
+    var results = [];
     for (var i = 0; i < people.length; i++) {
-        let name = people[i].name
+        let name = people[i].name;
         if (name != filteredName) {
-            results.push(name)
+            results.push(name);
         }
     }
-    return results
+    return results;
 }
 var selectName = function() {
     var currentName = "Betty";
-    return currentName
+    return currentName;
 }
-var filteredNames = nameFilter(currentName)
-console.log(filteredNames)
+var filteredNames = nameFilter(selectName());
+console.log(filteredNames);
