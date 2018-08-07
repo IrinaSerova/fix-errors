@@ -1,11 +1,11 @@
 //Fix the error
 function myFunction() {
-    let myObject = {
+   var myObject = {
         objProperty: "some text",
         objMethod: function() {
-            console.log(objProperty);
+            console.log(this.objProperty);
         }
     };
-    myObject.objMethod();
+     myObject.objMethod();
 }
-myFunction()
+myFunction();
