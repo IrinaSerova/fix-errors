@@ -1,2 +1,2 @@
-var nam;
+var name;
 console.log(name)
